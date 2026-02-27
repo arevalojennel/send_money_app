@@ -107,14 +107,15 @@ The app uses [JSONPlaceholder](https://jsonplaceholder.typicode.com/) as a fake 
 
 ## 📁 Project Structure
 
-lib/
-├── core/                     # Shared utilities (errors, network)
-├── data/                     # Data layer (datasources, models, repositories)
-├── domain/                   # Domain layer (entities, repositories interfaces, use cases)
-├── presentation/             # Presentation layer (cubits, screens, theme)
-├── injection_container.dart   # Dependency injection setup
-└── main.dart                  # App entry point
-test/                          # Unit tests for use cases and cubits
+      ```text
+      lib/
+      ├── core/                     # Shared utilities (errors, network)
+      ├── data/                     # Data layer (datasources, models, repositories)
+      ├── domain/                   # Domain layer (entities, repositories interfaces, use cases)
+      ├── presentation/             # Presentation layer (cubits, screens, theme)
+      ├── injection_container.dart   # Dependency injection setup
+      └── main.dart                  # App entry point
+      test/                          # Unit tests for use cases and cubits
 
 ---
 
