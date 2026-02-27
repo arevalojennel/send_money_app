@@ -75,7 +75,7 @@ The project follows **Clean Architecture** with three layers:
    ```bash
    flutter run
 
-The app will launch on your connected device/emulator. Use credentials user / pass to log in.
+The app will launch on your connected device/emulator. Use credentials `user` / `pass` to log in.
 
 ---
 
@@ -83,7 +83,7 @@ The app will launch on your connected device/emulator. Use credentials user / pa
 
 The project includes comprehensive unit tests for use cases and cubits.
 
-1. **Generate mock files (required for tests using mockito):**
+1. **Generate mock files (required for tests using `mockito`):**
       ```bash
       flutter pub run build_runner build --delete-conflicting-outputs
 
@@ -98,10 +98,10 @@ All tests should pass, confirming that the core logic works as expected.
 ## 🌐 API Integration
 
 The app uses [JSONPlaceholder](https://jsonplaceholder.typicode.com/) as a fake REST API:
-- GET /posts?userId=1 – retrieves a list of "transactions" (mocked from posts).
-- POST /posts – creates a new transaction (simulates sending money).
+- `GET /posts?userId=1` – retrieves a list of "transactions" (mocked from posts).
+- `POST /posts` – creates a new transaction (simulates sending money).
 
- **Important**:  JSONPlaceholder does not persist data. Therefore, all transactions created during a session are stored locally in memory. This ensures that even if the API is down, transactions are recorded and displayed. On logout, the local list is cleared.
+ **Important**:  JSONPlaceholder does **not** persist data. Therefore, all transactions created during a session are stored **locally in memory**. This ensures that even if the API is down, transactions are recorded and displayed. On logout, the local list is cleared.
 
 ---
 
