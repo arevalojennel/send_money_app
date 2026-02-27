@@ -107,7 +107,7 @@ The app uses [JSONPlaceholder](https://jsonplaceholder.typicode.com/) as a fake 
 
 ## 📁 Project Structure
 
-      ```text
+
       lib/
       ├── core/                     # Shared utilities (errors, network)
       ├── data/                     # Data layer (datasources, models, repositories)
